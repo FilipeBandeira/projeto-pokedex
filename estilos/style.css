@@ -2,13 +2,20 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; /*Padronização da borda, para melhor desenvolver*/
+}
+
+body {
+    background-color: #f6f8fc;
 }
 
 .content {
     padding: 1rem; /* 1rem é igual a 16px */
+    background-color: #fff;
+    height: 100vh;
 }
 
-ol.pokemon {
+.pokemon {
     display: grid; /*Para colocar os itens um ao lado do outro*/
     grid-template-columns: 1fr 1fr;
     list-style: none;
@@ -16,11 +23,51 @@ ol.pokemon {
     margin: 0;
 }
 
-ol.pokemon li {
+.pokemons {
+    display: flex;
+    flex-direction: column;
     margin: .5rem;
-    padding: 2rem 1rem;
+    padding: 1rem;
     border-radius: 1rem;
-    background-color: #14a06f;
-    color: white;
+    background-color: #49D0B0;
+}
+
+.pokemons .number {
+    color: #000;
+    opacity: .3;
+    text-align: right;
+    font-size: .625rem;
+}
+
+.pokemons .name {
+    color: #fff;
+    margin-bottom: .25rem;
+}
+
+.pokemons .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemons .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemons .detail .types .type {
+    background-color: #61e1ca;
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+}
+
+.pokemons .detail img {
+    max-width: 100%;
     height: 100px;
+    /*align-self: self-end; Img a direita*/
 }
