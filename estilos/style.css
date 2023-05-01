@@ -10,17 +10,18 @@ body {
 }
 
 .content {
+    width: 100vw;
+    height: 100vh;
     padding: 1rem; /* 1rem é igual a 16px */
     background-color: #fff;
-    height: 100vh;
 }
 
 .pokemon {
     display: grid; /*Para colocar os itens um ao lado do outro*/
-    grid-template-columns: 1fr 1fr;
-    list-style: none;
+    grid-template-columns: 1fr;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 .pokemons {

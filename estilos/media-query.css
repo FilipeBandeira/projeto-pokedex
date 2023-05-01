@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 380px) {
+    
+    .pokemon {
+        grid-template-columns: 1fr 1fr; /*Para o número de colunas*/
+    }
+}
+
+@media screen and (min-width: 576px) {
+    
+    .pokemon {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto; /*O auto divide o espaço que sobra, assim centralizando*/
+        border-radius: 1rem;
+    }
+
+    .pokemon {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
