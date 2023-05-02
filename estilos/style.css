@@ -17,7 +17,7 @@ body {
 }
 
 .pokemon {
-    display: grid; /*Para colocar os itens um ao lado do outro*/
+    display: grid; /*Para colocar os itens um ao lado do outro, uma melhor organização da lista*/
     grid-template-columns: 1fr;
     padding: 0;
     margin: 0;
